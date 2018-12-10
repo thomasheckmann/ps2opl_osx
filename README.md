@@ -7,8 +7,8 @@ This tutorial will show how to setup a SMB server using Docker on your Mac, that
 In order to get started you will need the following:
 
 - Mac with OSX and e.g. High Sierra that will work as SMB server
-- (Docker for Mac)[https://docs.docker.com/docker-for-mac/] installed and working
-- Somewhere on your filesystem, the required (directory structure)[http://www.ps2-home.com/forum/app.php/page/opl_folder_structure] for PS2OPL. 
+- [Docker for Mac](https://docs.docker.com/docker-for-mac/) installed and working
+- Somewhere on your filesystem, the required [directory structure](http://www.ps2-home.com/forum/app.php/page/opl_folder_structure) for PS2OPL. 
 
 ## Stop all filesharing services on Mac
 First thing is to stop all filesharing services on Mac.
