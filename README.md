@@ -26,8 +26,19 @@ sudo launchctl unload -w /System/Library/LaunchAgents/com.apple.netbiosd.plist
 By using an existing image with SMB, we will configure our own. The image settings are found in the docker-compose.yml, and an example can be found in this reposity.
 
 Important settings in docker-compose.yml:
+
+### What to share:
 ````
     # Shares
     - /Volumes/Data/Playstation2/PS2SMB:/mnt/ps2smb
 ````
-This states that the folder on our Mac `/Volumes/Data/Playstation2/PS2SMB` will be shared for use with PS2 OPL. The `/mnt/ps2smb` is the location inside the container.
+This states that the folder on our Mac `/Volumes/Data/Playstation2/PS2SMB` will be shared for use with PS2 OPL. The `/mnt/ps2smb` is the location inside the container. Replace the `/Volume/...` with the full paht to your own PS2 OPL SMB structure. If you want to change the mount point in the container, you also need to modify the smb.conf - more on that later.
+
+### User access
+````
+  environment:
+    - USERNAME=joe
+    - PASSWORD=samba
+````
+Should be obvious - you need these info on your PS2 later in order to connect to the SMB server.
+
