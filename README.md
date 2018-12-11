@@ -48,14 +48,12 @@ Should be obvious - you need these info on your PS2 later in order to connect to
 [PS2SMB]
         comment = PS2SMB
         path = /mnt/ps2smb
-        browseable = yes
-        read only = no
+        read only = yes
         guest ok = yes
-        public = yes
-        available = yes
 ````
 `[PS2SMB]` the name of the share as seen by the PS2, keep the name as it is.
 `path = /mnt/ps2smb` the mount point inside the container, remember how this was defined in the docker-compose.yml file?
+If guest access is not wanted, replace the `guest ok = yes` with `valid users = joe`, joe being the user defined above.
 
 # Start Docker container and run with SMB server
 You start the server by running the following command in the same folder as the two config files:
