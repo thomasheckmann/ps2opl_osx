@@ -63,3 +63,7 @@ You start the server by running the following command in the same folder as the 
 docker-compose run samba
 ````
 
+# Start Open Loader on PS2
+Go into network settings - this is what mine looks like:
+![img_2704](https://user-images.githubusercontent.com/14136378/49795022-422cde00-fd39-11e8-944e-6ecd3c438a07.JPG)
+
