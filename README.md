@@ -66,6 +66,6 @@ Go into network settings - this is what mine looks like:
 ![img_2704](https://user-images.githubusercontent.com/14136378/49795022-422cde00-fd39-11e8-944e-6ecd3c438a07.JPG)
 
 ## - SMB Server -
-Address - This is the IP of the Mac running the Docker SMB container
-Share - Share name as defined above in smb.conf [PS2SMB]
+- Address - This is the IP of the Mac running the Docker SMB container
+- Share - Share name as defined above in smb.conf [PS2SMB]
 
