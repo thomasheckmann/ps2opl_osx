@@ -58,7 +58,7 @@ If guest access is not wanted, replace the `guest ok = yes` with `valid users = 
 # Start Docker container and run with SMB server
 You start the server by running the following command in the same folder as the two config files:
 ````
-docker-compose run samba
+docker-compose run --service-ports samba
 ````
 
 # Start Open Loader on PS2
